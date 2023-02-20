@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.demo4.HelloController">
+   <HBox prefHeight="75.0" prefWidth="600.0">
+      <children>
+         <TextField fx:id="field" prefHeight="85.0" prefWidth="600.0" promptText="Place display input here" />
+      </children>
+   </HBox>
+   <HBox alignment="TOP_CENTER" prefHeight="130.0" prefWidth="600.0">
+      <children>
+         <Label fx:id="label" text="No Input" textFill="#027c70">
+            <font>
+               <Font name="System Bold" size="45.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="61.0" prefWidth="383.0">
+      <children>
+          <Button onAction="#binaryCon" prefHeight="50.0" prefWidth="310.0" text="B">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Button>
+         <Button fx:id="hello2" onAction="#hexaCon" prefHeight="50.0" prefWidth="297.0" text="H">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox layoutX="10.0" layoutY="143.0" prefHeight="61.0" prefWidth="383.0">
+      <children>
+         <Button onAction="#octalCon" prefHeight="50.0" prefWidth="310.0" text="O">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Button>
+         <Button fx:id="hello21" onAction="#nextScreen" prefHeight="50.0" prefWidth="297.0" text="Next Screen">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <HBox layoutX="10.0" layoutY="208.0" prefHeight="61.0" prefWidth="383.0">
+      <children>
+         <Button fx:id="closeButton" onAction="#exit" prefHeight="50.0" prefWidth="310.0" text="Exit">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Button>
+         <Button fx:id="hello211" onAction="#goBack" prefHeight="50.0" prefWidth="297.0" text="Clear">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+</VBox>
